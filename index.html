@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIT Projects Showcase</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="mt-4 mb-4">VIT Projects Showcase</h1>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" id="projectTabs">
+    <li class="nav-item">
+        <a class="nav-link" id="ediTab" data-toggle="pill" href="#edi">EDI</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="dtTab" data-toggle="pill" href="#dt">DT</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="courseTab" data-toggle="pill" href="#course">Course Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="sdpTab" data-toggle="pill" href="#sdp">SDP</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content mt-4">
+    <div class="tab-pane fade" id="edi">
+    <h3>Engineering Design and Innovations (EDI)</h3>
+    <p>Project Centric Learning (PCL) lets students pick projects in areas like healthcare, agriculture, and more. They learn by solving real-world problems, taking online courses, and getting guidance from teachers. PCL helps students gain practical skills for success in a project-based world, with a focus on hands-on learning and mentorship from teachers.</p>
+    </div>
+    <div class="tab-pane fade" id="dt">
+      <h3>Design Thinking (DT)</h3>
+      <p>DT focuses on teaching students about research, paper publication, and patent filing. It helps them understand the importance of research, distinguish terms related to it, and apply the methodology of publication. The course also covers topics like intellectual property rights, ethics in research, and entrepreneurship. By the end, students are expected to publish a paper or file a patent, gaining practical knowledge and skills in these areas.</p>
+    </div>
+    <div class="tab-pane fade" id="course">
+      <h3>Course Projects</h3>
+      <p>Description and details about course projects at VIT.</p>
+    </div>
+    <div class="tab-pane fade" id="sdp">
+      <h3>Software Development Project (SDP)</h3>
+      <p>Description and details about SDP projects at VIT.</p>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript for handling tabs -->
+<script>
+  $(document).ready(function(){
+    // Activate the first tab by default
+    $("#ediTab").addClass("active");
+    $("#edi").addClass("show active");
+
+    // Handle tab clicks
+    $(".nav-pills a").click(function(){
+      $(".nav-pills a").removeClass("active");
+      $(this).addClass("active");
+
+      var tabId = $(this).attr("href");
+      $(".tab-pane").removeClass("show active");
+      $(tabId).addClass("show active");
+    });
+  });
+// document.querySelector("#edi").addClass("show active");
+// document.querySelector("#ediTab").addClass("active");
+</script>
+
+</body>
+</html>
