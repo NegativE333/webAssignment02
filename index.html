@@ -16,46 +16,91 @@
 <body>
 
 <div class="container">
-  <h1 class="mt-4 mb-4">VIT Projects Showcase</h1>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <img src="vit-logo.png" style="width: 40px;"/>
+    <h1 class="mt-4 mb-4">Vishwakarma Institute of Technology, Pune</h1>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 12px;">
+    <ul class="nav nav-pills" id="projectTabs" style="display: flex; gap: 8px;">
+      <li class="nav-item">
+          <button class="nav-link" id="ediTab" data-toggle="pill" href="#edi">
+            EDI
+          </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="dtTab" data-toggle="pill" href="#dt">
+          DT
+        </button>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link" id="courseTab" data-toggle="pill" href="#course">
+            Course Projects
+          </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="sdpTab" data-toggle="pill" href="#sdp">
+          SDP
+        </button>
+      </li>
+    </ul>
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-pills" id="projectTabs">
-    <li class="nav-item">
-        <a class="nav-link" id="ediTab" data-toggle="pill" href="#edi">EDI</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="dtTab" data-toggle="pill" href="#dt">DT</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="courseTab" data-toggle="pill" href="#course">Course Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="sdpTab" data-toggle="pill" href="#sdp">SDP</a>
-    </li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content mt-4">
-    <div class="tab-pane fade" id="edi">
-    <h3>Engineering Design and Innovations (EDI)</h3>
-    <p>Project Centric Learning (PCL) lets students pick projects in areas like healthcare, agriculture, and more. They learn by solving real-world problems, taking online courses, and getting guidance from teachers. PCL helps students gain practical skills for success in a project-based world, with a focus on hands-on learning and mentorship from teachers.</p>
-    </div>
-    <div class="tab-pane fade" id="dt">
-      <h3>Design Thinking (DT)</h3>
-      <p>DT focuses on teaching students about research, paper publication, and patent filing. It helps them understand the importance of research, distinguish terms related to it, and apply the methodology of publication. The course also covers topics like intellectual property rights, ethics in research, and entrepreneurship. By the end, students are expected to publish a paper or file a patent, gaining practical knowledge and skills in these areas.</p>
-    </div>
-    <div class="tab-pane fade" id="course">
-      <h3>Course Projects</h3>
-      <p>Description and details about course projects at VIT.</p>
-    </div>
-    <div class="tab-pane fade" id="sdp">
-      <h3>Software Development Project (SDP)</h3>
-      <p>Description and details about SDP projects at VIT.</p>
+    <div class="tab-content mt-4" style="text-align: center;">
+      <div class="tab-pane fade" id="edi">
+      <h3>Engineering Design and Innovations (EDI)</h3>
+      <h4>
+        Course Objectives
+      </h4>
+      <ol style="text-align: start;">
+        <li>
+          To develop critical thinking and problem solving ability by exploring and proposing solutions to realistic/social problems.
+        </li>
+        <li>
+          To Evaluate alternative approaches, and justify the use of selected tools and methods.
+        </li>
+        <li>
+          To emphasize learning activities those are long-term, inter-disciplinary and student-centric.
+        </li>
+        <li>
+          To engage students in rich and authentic learning experiences.
+        </li>
+        <li>
+          To provide every student the opportunity to get involved either individually or as a group so as to develop team skills and learn professionalism.
+        </li>
+        <li>
+          To develop an ecosystem to promote entrepreneurship and research culture among the students.
+        </li>
+      </ol>
+      <h4>
+        Course Relevance
+      </h4>
+      <p>Project Centric Learning (PCL) lets students pick projects in areas like healthcare, agriculture, and more. They learn by solving real-world problems, taking online courses, and getting guidance from teachers. PCL helps students gain practical skills for success in a project-based world, with a focus on hands-on learning and mentorship from teachers.</p>
+      </div>
+      <div class="tab-pane fade" id="dt">
+        <h3>Design Thinking (DT)</h3>
+        <p>DT focuses on teaching students about research, paper publication, and patent filing. It helps them understand the importance of research, distinguish terms related to it, and apply the methodology of publication. The course also covers topics like intellectual property rights, ethics in research, and entrepreneurship. By the end, students are expected to publish a paper or file a patent, gaining practical knowledge and skills in these areas.</p>
+      </div>
+      <div class="tab-pane fade" id="course">
+        <h3>Course Projects</h3>
+        <p>
+          A course project is an integral part of academic learning, offering students the opportunity to apply theoretical knowledge to real-world scenarios. These projects are designed to enhance practical skills, critical thinking, and problem-solving abilities within a specific subject area. Often collaborative in nature, course projects foster teamwork, communication, and time management.
+        </p>
+        <p>
+          The scope of a course project can vary, ranging from software development and research studies to design prototypes and business plans. Students engage in hands-on experiences, allowing them to delve deeper into the subject matter and gain a comprehensive understanding of the concepts covered in the course.
+        </p>
+      </div>
+      <div class="tab-pane fade" id="sdp">
+        <h3>Software Development Project (SDP)</h3>
+        <p>
+          A Software Development Project (SDP) is a comprehensive undertaking in the realm of software engineering, where teams collaboratively design, develop, test, and deploy software solutions to address specific needs or challenges. This project type is pivotal in preparing students for the dynamic field of software development by providing hands-on experience and practical application of theoretical concepts.
+        </p>
+        <p>
+          SDPs typically follow the Software Development Life Cycle (SDLC), encompassing phases such as requirements gathering, design, implementation, testing, and maintenance. These projects often simulate real-world scenarios, allowing students to tackle complex problems, make informed decisions, and work effectively in a team environment.
+        </p>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- jQuery and Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
