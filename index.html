@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIT Projects Showcase</title>
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Custom CSS -->
   <style>
     body {
       padding: 20px;
@@ -20,9 +18,10 @@
     <img src="vit-logo.png" style="width: 40px;"/>
     <h1 class="mt-4 mb-4">Vishwakarma Institute of Technology, Pune</h1>
   </div>
+  <hr style="background-color: black; opacity: 50%;"/>
   <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 12px;">
     <ul class="nav nav-pills" id="projectTabs" style="display: flex; gap: 8px;">
-      <li class="nav-item">
+      <li class="nav-item" style="background-color: transparent; border: none;">
           <button class="nav-link" id="ediTab" data-toggle="pill" href="#edi">
             EDI
           </button>
@@ -77,10 +76,16 @@
       </div>
       <div class="tab-pane fade" id="dt">
         <h3>Design Thinking (DT)</h3>
+        <h4>
+          Course Relevance
+        </h4>
         <p>DT focuses on teaching students about research, paper publication, and patent filing. It helps them understand the importance of research, distinguish terms related to it, and apply the methodology of publication. The course also covers topics like intellectual property rights, ethics in research, and entrepreneurship. By the end, students are expected to publish a paper or file a patent, gaining practical knowledge and skills in these areas.</p>
       </div>
       <div class="tab-pane fade" id="course">
         <h3>Course Projects</h3>
+        <h4>
+          Course Relevance
+        </h4>
         <p>
           A course project is an integral part of academic learning, offering students the opportunity to apply theoretical knowledge to real-world scenarios. These projects are designed to enhance practical skills, critical thinking, and problem-solving abilities within a specific subject area. Often collaborative in nature, course projects foster teamwork, communication, and time management.
         </p>
@@ -90,11 +95,37 @@
       </div>
       <div class="tab-pane fade" id="sdp">
         <h3>Software Development Project (SDP)</h3>
+        <h4>
+          Course Objectives
+        </h4>
+        <ol style="text-align: start;">
+          <li>
+            To develop problem solving ability using programming skills by exploring and proposing solutions to realistic/social problems.
+          </li>
+          <li>
+            To Evaluate alternative approaches, and justify the use of selected tools and methods.
+          </li>
+          <li>
+            To emphasize learning activities those are long-term, inter-disciplinary and student-centric.
+          </li>
+          <li>
+            To engage students in rich and authentic learning experiences.
+          </li>
+          <li>
+            To provide every student the opportunity to get involved either individually or as a group so as to develop team skills and learn professionalism.
+          </li>
+          <li>
+            To develop an ecosystem to promote entrepreneurship and research culture among the students.
+          </li>
+        </ol>
+        <h4>
+          Course Relevance
+        </h4>
         <p>
-          A Software Development Project (SDP) is a comprehensive undertaking in the realm of software engineering, where teams collaboratively design, develop, test, and deploy software solutions to address specific needs or challenges. This project type is pivotal in preparing students for the dynamic field of software development by providing hands-on experience and practical application of theoretical concepts.
+          Software project development comes under the category of project based learning (PBL). PBL is an instructional approach designed to give students the opportunity to develop knowledge and skills through engaging projects set around challenges and problems they may face in the real world by using domain specific language technologies. PBL is "learning by doing."
         </p>
         <p>
-          SDPs typically follow the Software Development Life Cycle (SDLC), encompassing phases such as requirements gathering, design, implementation, testing, and maintenance. These projects often simulate real-world scenarios, allowing students to tackle complex problems, make informed decisions, and work effectively in a team environment.
+          In short, if students are prepared for success in life, we need to prepare them for a project-based world. It is a style of active learning and inquiry-based learning. Project based learning will also redefine the role of teacher as mentor in the learning process.The PBL model focuses the student on a big open-ended question, challenge, or problem to research and respond to and/or solve. It brings students not only to know, understand and remember rather it takes them to analyze, design and apply categories of Bloom’s Taxonomy.
         </p>
       </div>
     </div>
@@ -105,7 +136,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Custom JavaScript for handling tabs -->
 <script>
   $(document).ready(function(){
     // Activate the first tab by default
@@ -122,8 +152,6 @@
       $(tabId).addClass("show active");
     });
   });
-// document.querySelector("#edi").addClass("show active");
-// document.querySelector("#ediTab").addClass("active");
 </script>
 
 </body>
